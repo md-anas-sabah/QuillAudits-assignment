@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "./Hero";
-import BeforeAndAfter from "./BeforeAndAfter";
+import HeroSection from "./HeroSection";
+import AfterHeroSection from "./AfterHeroSection";
 import { Button } from "./ui/button";
 import Info from "./Info";
 import CeoTemp from "./CeoTemp";
@@ -11,8 +11,8 @@ import Footer from "./Footer";
 const Main = () => {
   return (
     <div>
-      <Hero />
-      <BeforeAndAfter />
+      <HeroSection />
+      <AfterHeroSection />
       <h1 className="text-center text-3xl text-blue-900 font-bold mt-5 md:mt-16">
         See how QuillAudits is a trusted partner in <br /> 1000+ Audit stories
       </h1>
