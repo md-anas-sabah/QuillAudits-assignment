@@ -19,9 +19,7 @@ import {
 
 const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null) as any;
-  // Track active dropdown
 
-  // Function to determine if an item should have an arrow
   const hasArrow = (itemIndex: number) => [0, 3, 4].includes(itemIndex);
 
   const handleDropdownClick = (index: number) => {
