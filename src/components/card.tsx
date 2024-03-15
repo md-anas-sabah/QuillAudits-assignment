@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Ceo, star, verBlue, verWhite } from "../../public/assets";
 
-const CeoTemp = () => {
+const Card = () => {
   return (
     <main className="shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] my-10">
       <div className="relative">
@@ -24,7 +24,7 @@ const CeoTemp = () => {
                 <h1 className="text-2xl font-semibold md:hidden block">
                   Carpediem
                 </h1>
-                <p className="font-normal hidden md:block ">Ceo</p>
+                <p className="font-normal hidden md:block ">WebGFi - CEO</p>
                 <p className="font-normal md:hidden ">TEAM</p>
               </div>
             </div>
@@ -50,4 +50,4 @@ const CeoTemp = () => {
   );
 };
 
-export default CeoTemp;
+export default Card;

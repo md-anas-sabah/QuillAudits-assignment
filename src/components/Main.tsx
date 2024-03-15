@@ -1,9 +1,9 @@
 import React from "react";
 import HeroSection from "./HeroSection";
 import AfterHeroSection from "./AfterHeroSection";
-import { Button } from "./ui/button";
+import { Button } from "./buttonOverlay/button";
 import Info from "./Info";
-import CeoTemp from "./CeoTemp";
+import Card from "./card";
 import Newsletter from "./Newsletter";
 import Location from "./Location";
 import Footer from "./Footer";
@@ -44,7 +44,7 @@ const Main = () => {
             issue resolution, CDP reinforces platform security, bolstering user
             trust.
           </p>
-          <CeoTemp />
+          <Card />
         </div>
         <div className="md:w-2/5 relative">
           <div className="hidden md:block">

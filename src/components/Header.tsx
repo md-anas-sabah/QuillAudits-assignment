@@ -5,14 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 import { logo } from "../../public/assets";
-import { Button, buttonVariants } from "./ui/button";
+import { Button, buttonVariants } from "./buttonOverlay/button";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/buttonOverlay/sheet";
 
 const navLinks = [
   { id: "service", title: "Service" },

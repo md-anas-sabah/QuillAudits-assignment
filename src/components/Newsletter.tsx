@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { mailsss } from "../../public/assets";
-import { Button } from "./ui/button";
+import { Button } from "./buttonOverlay/button";
 
 const Newsletter = () => {
   return (

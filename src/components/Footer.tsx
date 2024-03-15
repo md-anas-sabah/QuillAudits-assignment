@@ -3,7 +3,7 @@ import React from "react";
 import { defi, logo, telangana, telegram } from "../../public/assets";
 import { Audit, footerButton, footerItems, socialMedia } from "@/constants";
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
+import { buttonVariants } from "./buttonOverlay/button";
 import { Mail } from "lucide-react";
 import footerBG from "../../public/assets/footerBG.png";
 
