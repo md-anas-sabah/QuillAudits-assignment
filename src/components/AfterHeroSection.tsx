@@ -1,5 +1,5 @@
 import React from "react";
-import Headqauter from "./Headqauter";
+import Location from "./Location";
 
 const Audits = [
   {
@@ -62,7 +62,7 @@ const AfterHeroSection = () => {
         </div>
       </section>
       <div className="md:hidden w-full block mx-auto my-16">
-        <Headqauter />
+        <Location />
       </div>
     </main>
   );
