@@ -1,11 +1,197 @@
 import Image from "next/image";
 import React from "react";
-import { defi, logo, telangana, telegram } from "../../public/assets";
-import { Audit, footerButton, footerItems, socialMedia } from "@/constants";
+import { defi, logo, telangana } from "../../public/assets";
 import Link from "next/link";
 import { buttonVariants } from "./buttonOverlay/button";
 import { Mail } from "lucide-react";
 import footerBG from "../../public/assets/footerBG.png";
+import {
+  challengesImg,
+  discord,
+  flexibleImg,
+  linkld,
+  media,
+  reddit,
+  telegram,
+  x,
+  yt,
+} from "../../public/assets";
+const buttons = [
+  {
+    bid: 1,
+    name: "Refer-Earn-Secure",
+  },
+  {
+    bid: 2,
+    name: "WAGSI Grants",
+  },
+  {
+    bid: 3,
+    name: "Ambassador Program",
+  },
+  {
+    bid: 4,
+    name: "Partnership Program",
+  },
+];
+const socialMedia = [
+  {
+    id: 1,
+    img: x,
+  },
+  {
+    id: 2,
+    img: linkld,
+  },
+  {
+    id: 3,
+    img: telegram,
+  },
+  {
+    id: 4,
+    img: reddit,
+  },
+  {
+    id: 5,
+    img: media,
+  },
+  {
+    id: 6,
+    img: discord,
+  },
+  {
+    id: 7,
+    img: yt,
+  },
+];
+const Audit = [
+  {
+    name: "Ethereum Audit",
+  },
+  {
+    name: "Polygon Audit",
+  },
+  {
+    name: "BSC Audit",
+  },
+  {
+    name: "Solana Audit",
+  },
+  {
+    name: "NEAR Audit",
+  },
+  {
+    name: "Algorand Audit",
+  },
+  {
+    name: "Tezos Audit",
+  },
+  {
+    name: "Hyperledger Fabric Audit",
+  },
+  {
+    name: "L1 Audit",
+  },
+  {
+    name: "Polkadot Audit",
+  },
+  {
+    name: "Wallet Audit",
+  },
+  {
+    name: "ZkSync Audit",
+  },
+  {
+    name: "Starknet Audit",
+  },
+];
+
+const footerItems = [
+  {
+    ftitle: "Quill Ecosystem",
+    fItems: [
+      {
+        fItem: "QuillAI",
+      },
+      {
+        fItem: "QuillCheck",
+      },
+      {
+        fItem: "QuillShield",
+      },
+      {
+        fItem: "QuillAcademy",
+      },
+      {
+        fItem: "QuillMonitor",
+      },
+      {
+        fItem: "Web3Suggest",
+      },
+      {
+        fItem: "Explore All Tools",
+      },
+    ],
+  },
+  {
+    ftitle: "Other Services",
+    fItems: [
+      {
+        fItem: "Red Teaming",
+      },
+      {
+        fItem: "dApp Pentesting",
+      },
+      {
+        fItem: "DeFi Diligence",
+      },
+      {
+        fItem: "NFT Due Diligence",
+      },
+      {
+        fItem: "Rug Pull Due Diligence",
+      },
+      {
+        fItem: "Security Consultation",
+      },
+      {
+        fItem: "Blockchain Forensics",
+      },
+      {
+        fItem: "KYC (Know Your Customer)",
+      },
+    ],
+  },
+  {
+    ftitle: "Quick Links",
+    fItems: [
+      {
+        fItem: "Pricing",
+      },
+      {
+        fItem: "Audit Process",
+      },
+      {
+        fItem: "Our Audits",
+      },
+      {
+        fItem: "Testimonials",
+      },
+      {
+        fItem: "Security Synopsis",
+      },
+      {
+        fItem: "Blog",
+      },
+      {
+        fItem: "Clients",
+      },
+      {
+        fItem: "Careers",
+      },
+    ],
+  },
+];
 
 const Footer = () => {
   return (
@@ -16,12 +202,7 @@ const Footer = () => {
         className="bg-cover relative -z-10 h-[200vh] md:h-full"
       />
       <main className="  md:px-24 px-6 absolute z-10 top-10 w-full ">
-        {/* first 2 div  */}
-
         <div className="md:flex md:flex-col ">
-          {/* here it has to 2 div  */}
-          {/* this is logo and three div  */}
-
           <div className="flex gap-3 mb-10 justify-center items-center md:justify-start ">
             <Image src={logo} alt="logo" className="h-12 w-12" />
             <div className="text-end">
@@ -30,13 +211,11 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* top is logo div  */}
           <div className=" md:flex ">
             <main className="flex flex-col  w-full justify-between ">
               <div className="flex w-full flex-col-reverse md:flex-row  justify-center">
                 <section className="flex md:w-2/5 justify-between   ">
                   <div className="flex-1 pr-20">
-                    {/* below of footer logo  */}
                     <div className="">
                       <h1 className="underline decoration-blue-500 underline-offset-8 font-semibold text-lg">
                         More About Quill
@@ -77,7 +256,6 @@ const Footer = () => {
                     </div>
                     <div>
                       <div className=" w-full">
-                        {/* img  */}
                         <h1 className="font-semibold">Our Location:</h1>
                         <p className="text-sm my-2 ">
                           Office 104/105 Level 1,{" "}
@@ -137,12 +315,12 @@ const Footer = () => {
                   <div>
                     <div>
                       <h1 className="underline decoration-blue-500 underline-offset-8 font-semibold text-lg mb-4 hidden md:block">
-                        Our programmer
+                        Our programmes
                       </h1>
                       <div />
                     </div>
                     <div className="md:flex grid grid-cols-2 justify-between gap-4 md:m-auto">
-                      {footerButton.map((but, i) => (
+                      {buttons.map((but, i) => (
                         <Link
                           key={but.bid}
                           href={""}
@@ -175,7 +353,7 @@ const Footer = () => {
                           <Image
                             src={social.img}
                             alt="social"
-                            className="  hover:border  rounded-sm hover:border-t-transparent hover:border-blue-500 hover:border-b-4 cursor-pointer"
+                            className=" cursor-pointer"
                           />
                         </div>
                       ))}
